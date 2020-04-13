@@ -1,0 +1,26 @@
+body {
+  background-image: url('background.jpg');
+ 
+}
+
+body {color: bisque;
+text-align: center;
+font-family: 'Baloo Tamma 2', cursive;}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  background-color: crimson;
+  color: bisque;
+  width: 150px;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover{
+	background-color:brown;
+
+
