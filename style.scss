@@ -1,0 +1,116 @@
+/*border: 3px solid purple
+#eee2dc #edc7b7 #bab2b5  #ac3b61 #123c69
+*/
+
+
+
+$colorOne:#eee2dc;
+$colorOnePointFive:#f7dfd2;
+$colorTwo:#edc7b7;
+$colorThree:#bab2b5;
+$colorFour:#ac3b61;
+$colorFive:#123c69;
+
+
+body {
+  /*background-image: url('../images/background.jpg');*/
+background-color:$colorOne;
+  color: $colorFive;
+text-align: left;
+font-family: 'Baloo Tamma 2', cursive;}
+
+ul {
+  list-style-type: none;
+}
+
+.articleLink {
+  color: $colorFour;
+  text-decoration:underline;
+  cursor: pointer;
+}
+
+
+p{
+  font-size:16px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+  font-size:35pt;
+}
+
+hr{
+  border-top: 1px solid $colorFive;
+}
+
+.quote{
+  font-style:italic;
+}
+.navbar-inverse {
+    background-color: $colorTwo;
+border: none;
+    border-radius: 0}
+
+.navbar-toggle{
+  border: none;
+  text-align:center;
+
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: $colorFour !important;
+}
+
+.navbarText{
+  color:$colorFour!important;
+  font-size:14pt;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.title{
+margin: 120px 0px 40px 0px;
+text-align:center;
+}
+
+.subheading{
+  text-align:center;
+}
+
+.navbar-brand{
+  width:200px;
+  font-size:19pt!important;
+}
+
+.project{
+margin:20px 10px 20px 10px;
+padding:10px 10px 10px 10px;
+font-size:16pt;
+  border: 1px solid $colorFour;
+  
+  background-color:$colorOnePointFive;
+}
+
+
+.projectButton{
+padding:5px 20px 0 20px;
+color:white;
+border:none;
+font-size:16px;
+border-radius:10px;
+background-color:$colorFour;
+
+}
+
+.projectLink{
+  color:$colorTwo
+}
+
+#moreOne{display: none;}
+
+#moreTwo{display: none;}
+
+

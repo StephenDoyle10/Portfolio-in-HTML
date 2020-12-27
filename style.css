@@ -1,26 +1,106 @@
+/*border: 3px solid purple
+#eee2dc #edc7b7 #bab2b5  #ac3b61 #123c69
+*/
 body {
-  background-image: url('background.jpg');
- 
+  /*background-image: url('../images/background.jpg');*/
+  background-color: #eee2dc;
+  color: #123c69;
+  text-align: left;
+  font-family: "Baloo Tamma 2", cursive;
 }
-
-body {color: bisque;
-text-align: center;
-font-family: 'Baloo Tamma 2', cursive;}
 
 ul {
   list-style-type: none;
 }
 
-a {
-  background-color: crimson;
-  color: bisque;
-  width: 150px;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+.articleLink {
+  color: #ac3b61;
+  text-decoration: underline;
+  cursor: pointer;
 }
-a:hover{
-	background-color:brown;
 
+p {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+h1 {
+  font-size: 35pt;
+}
+
+hr {
+  border-top: 1px solid #123c69;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.navbar-inverse {
+  background-color: #edc7b7;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-toggle {
+  border: none;
+  text-align: center;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #ac3b61 !important;
+}
+
+.navbarText {
+  color: #ac3b61 !important;
+  font-size: 14pt;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.title {
+  margin: 120px 0px 40px 0px;
+  text-align: center;
+}
+
+.subheading {
+  text-align: center;
+}
+
+.navbar-brand {
+  width: 200px;
+  font-size: 19pt !important;
+}
+
+.project {
+  margin: 20px 10px 20px 10px;
+  padding: 10px 10px 10px 10px;
+  font-size: 16pt;
+  border: 1px solid #ac3b61;
+  background-color: #f7dfd2;
+}
+
+.projectButton {
+  padding: 5px 20px 0 20px;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #ac3b61;
+}
+
+.projectLink {
+  color: #edc7b7;
+}
+
+#moreOne {
+  display: none;
+}
+
+#moreTwo {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
