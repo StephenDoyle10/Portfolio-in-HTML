@@ -75,8 +75,8 @@ hr {
 }
 
 .project {
-  margin: 20px 10px 20px 10px;
-  padding: 10px 0 10px 0;
+  margin: 20px 0 20px 0;
+  padding: 10px 10px 10px 10px;
   font-size: 16pt;
   border: 1px solid #ac3b61;
   background-color: #f7dfd2;
