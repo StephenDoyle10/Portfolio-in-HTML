@@ -13,7 +13,6 @@ $colorFive:#123c69;
 
 
 body {
-  /*background-image: url('../images/background.jpg');*/
 background-color:$colorOne;
   color: $colorFive;
 text-align: left;
@@ -27,6 +26,7 @@ ul {
   color: $colorFour;
   text-decoration:underline;
   cursor: pointer;
+  font-size:16px;
 }
 
 
@@ -38,6 +38,18 @@ p{
 
 h1{
   font-size:35pt;
+}
+
+h2{
+  font-size:30pt;
+}
+
+h3{
+  font-size:25pt;
+}
+
+h4{
+  font-size:20pt;
 }
 
 hr{
@@ -67,8 +79,13 @@ border: none;
   font-size:14pt;
 }
 
-.bold{
+.bold, .mediaName{
   font-weight: bold;
+}
+
+.bookTitle{
+  font-weight: bold;
+  font-style:italic;
 }
 
 .title{
@@ -86,7 +103,7 @@ text-align:center;
 }
 
 .project{
-margin:20px 10px 20px 10px;
+margin:20px 0 20px 0;
 padding:10px 10px 10px 10px;
 font-size:16pt;
   border: 1px solid $colorFour;
@@ -102,12 +119,33 @@ border:none;
 font-size:16px;
 border-radius:10px;
 background-color:$colorFour;
+display:inline
 
 }
 
 .projectLink{
   color:$colorTwo
 }
+
+.images{
+  text-align:center;
+}
+
+
+
+.logo{
+margin:10px 5px 10px 5px;
+  height:40px;
+  width:auto;
+  
+  display:inline
+}
+
+.projectButtons{
+  text-align:center
+}
+
+
 
 #moreOne{display: none;}
 

@@ -2,7 +2,6 @@
 #eee2dc #edc7b7 #bab2b5  #ac3b61 #123c69
 */
 body {
-  /*background-image: url('../images/background.jpg');*/
   background-color: #eee2dc;
   color: #123c69;
   text-align: left;
@@ -17,6 +16,7 @@ ul {
   color: #ac3b61;
   text-decoration: underline;
   cursor: pointer;
+  font-size: 16px;
 }
 
 p {
@@ -26,6 +26,18 @@ p {
 
 h1 {
   font-size: 35pt;
+}
+
+h2 {
+  font-size: 30pt;
+}
+
+h3 {
+  font-size: 25pt;
+}
+
+h4 {
+  font-size: 20pt;
 }
 
 hr {
@@ -56,8 +68,13 @@ hr {
   font-size: 14pt;
 }
 
-.bold {
+.bold, .mediaName {
   font-weight: bold;
+}
+
+.bookTitle {
+  font-weight: bold;
+  font-style: italic;
 }
 
 .title {
@@ -89,10 +106,26 @@ hr {
   font-size: 16px;
   border-radius: 10px;
   background-color: #ac3b61;
+  display: inline;
 }
 
 .projectLink {
   color: #edc7b7;
+}
+
+.images {
+  text-align: center;
+}
+
+.logo {
+  margin: 10px 5px 10px 5px;
+  height: 40px;
+  width: auto;
+  display: inline;
+}
+
+.projectButtons {
+  text-align: center;
 }
 
 #moreOne {
