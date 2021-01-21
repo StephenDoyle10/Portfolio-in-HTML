@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Stephen Doyle</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/bootstrap3.3.7.css">
+      <link href="css/style.css" type="text/css" rel="stylesheet">
+      <link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>                        
+               </button>
+               <a class="navbar-brand navbarText" href="./index.html">Stephen Doyle</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav justify-content-center">
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./about.html" class="navbarText" >About</a></li>
+                  
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./projects.html" class="navbarText" >Projects</a></li>
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./articles.html" class="navbarText" >Articles</a></li>
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./resources.html" class="navbarText" >Resources</a></li>
+                  
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./contact.html" class="navbarText" >Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <div class="container">
+        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12">
+            <div class="bodyContent" id="articles">
+            
+                <h2 class="subheading">Articles</h2>
+                </br>
+            
+                <h3 class="subheading">Asynchronous Javascript</h3>
+                
+                <p>Aysynchronous JavaScript touches on a lot of different concepts, such as callback functions, higher order functions, ‘callback hell’, single- vs multi-threaded code, I/O blocking/non-blocking, the Javascript runtime, the event loop, the call stack, task queue, promises, async/await, web apis, and node apis. It can seem overwhelming, however the aim of the following article is to explain all these concepts and show how they all fit together.</p>
+                <br/>
+                <h4>What is asynchronous programming and why is it important in web development?</h4>
+                <p>Let’s say you are looking for cheap hotel rooms for your holiday, and you use a website like Trivago that compares prices from hundreds of different sites. You enter in your trip dates and preferred location and when you click submit, Trivago gets to work trawling these hundreds of other websites for the best deals. It will likely take a number of seconds for this request to complete, and to retrieve the requested data.</p>
+                <p>Now, if the website makes a synchronous request, the execution of further code will be blocked until the request is completed and the required data is retrieved, which causes the website to freeze. Not good. But if the website makes an asynchronous request, the browser can continue to execute other code and work as normal, while the request is being completed in the background.  With asynchronous programming, JavaScript can run parts of tasks and continue to other tasks while the previous tasks complete; it does not have to wait for each individual task to complete before moving on to the next one.</p>
+                <br/>
+                <h4>Is JavaScript an aynchronous language?</h4>
+                <p>JavaScript is a <span class="bold">single-threaded</span> language, which means no two bits of script can run at the same time (contrast with Java or C#, which are <span class="bold">multi-threaded</span> so can run different pieces of script parallel with each other). This means, by default, and at its core, Javascript is a synchronous language. However, JavaScript can also be made to work asynchronously, which is what makes it so efficient and powerful for both frontend and backend web development, and means a website built with JavaScript doesn’t freeze when, for example, performing an API request.</p>
+                <p>Asynchronous javascript has gone through various stages of development over the years, becoming more and more refined and sophisticated. The earliest way to achieve asynchronous JavaScript was with the use of <span class="bold">callback functions</span>, although, as we will see, this had its problems, and often resulted in code that was difficult to write, read and debug. <span class="bold">Promises</span>, a more elegant way to enable asynchronous JavaScript, was integrated in the ES6/ECMA2015 JavaScript revision. Promises made asynchronous JavaScript code more pleasant to read and write, and in the ES8/ECMA2017 JavaScript revision, more syntactic sugar was added to these promises, with the addition of the ‘<span class="bold">async...await</span>’ syntax.</p>
+                <br/>
+                <h4>Callback functions</h4>
+                <p>Sometimes a function will take another function as one of its parameters. In this case, the function that takes the function as a parameter is called a <span class="bold">higher order function</span>, whereas the function that is used as an argument in the higher order function is called a <span class="bold">callback function</span>. Many callback functions are synchronous/ blocking, like Javascript in general. However, often callbacks are used to continue code execution after an asynchronous operation has completed — these are called asynchronous callbacks.</p>
+                <p>The simplest way to do this is with the setTimeout() method. setTimeout() takes a functions as an argument - ie a callback function. Look at the following code:</p>
+                <pre><code>console.log(“hello”);<br/>console.log(“goodbye);</code></pre>
+                </br>
+                <p>When this is run, the following will be logged to the console:</p>
+                <pre><code>hello<br/>goodbye</code></pre>
+                <p>Both methods are blocking (which means they block the running of subsequent code until they have finished), and run synchronously, from top to bottom.</p>
+                <p>Now look at the following code:</p>
+                <pre><code>setTimeout(()=>{console.log("hello")}, 1000); <br/>console.log(“goodbye");</code></pre>
+                <p>In this code, console.log(“hello") is now an anonymous callback function inside the setTimeout method, and this method has been told not to execute the callback for 1000 ms (1 second). setTimeout method is non-blocking; when it is called, the operation is taken over by the browser, leaving JavaScript to run any subsequent code. The browser/web API takes care of the countdown timer of 1000ms, and when the timer is up, the callback function joins the call stack (via the task queue and the event loop) to be carried out by the JavaScript interpreter. Ultimately, when this code is run, the following will be logged to the console:</p>
+                <pre><code>goodbye<br/>hello</code></pre>
+                
+                <p>Node.JS runs on similar principles, and makes heavy use of callback functions. When the higher order function is first called, the operation is offloaded to the system kernel, until it is complete, then passed back to the call stack (via the task queue and event loop) to be carried out by the JavaScript interpreter.</p>
+                <p>For example:</p>
+                <pre><code>findData(database,(err, result)=>{<br/>&nbsp;&nbsp;&nbsp;displayResults(result)}) </code></pre>
+                <p>Here, findData() is a method that fetches data from a database. When this is called, the operation is offloaded to the system kernel, which proceeds to retrieve the requested data, while JavaScript is freed up to execute any subsequent code in the process. When the data has been successfully retrieved, the operation is passed back to JavaScript to execute the callback [displayResults(result)], which displays results on the webpage.</p>
+                
+                <p>It is probably helpful to see this explained in Node's own words. This is taken from their own <a href="https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/">documentation</a>:</p>
+                <blockquote>The event loop is what allows Node.js to perform non-blocking I/O operations — despite the fact that JavaScript is single-threaded — by offloading operations to the system kernel whenever possible. Since most modern kernels are multi-threaded, they can handle multiple operations executing in the background. When one of these operations completes, the kernel tells Node.js so that the appropriate callback may be added to the poll queue to eventually be executed.</blockquote>
+                <br/>
+                <h4>Promises, and Async/Await</h4>
+                <p>Callbacks work fine for small operations, but when a project becomes more ambitions, it will likely start to have callbacks within callbacks within callbacks, and so on. For example, your project may make a request to a database, and use the returned data to make another request, and use the returned data of that request to make another request, and so on. This results in something that has been nicknamed the ‘pyramid of doom’, or ‘callback hell’, and it results in code that is difficult to write, read, and debug.</p>
+                <p>Promises were implemented in ES6/ECMA 2015 in order to tackle the problem of callback hell. With promises, asynchronous code can be written to look like synchronous code ie neatly aligned vertically, rather than being nested and lurching ever further to the right. The advantage of this is that synchronous code always looks more natural and intuitive to human eyes, and easier to read, write and debug, than asynchronous code.</p>
+                <p>With ES8/ECMA2017, Async/ Await syntax was implemented. This is just syntactic sugar for Promises, meaning it doesn’t introduce any new functionality. The main benefit is that with async/ await, one can write asynchronous code, yet it looks even more like synchronous code and eliminates nesting, making it is easier to read, write and debug (as asynchronous code is often counter-intuitive and difficult to read).</p>
+                <br/>
+                <p>Further reading:</p>
+                <p>MDN Web Docs: Concurency model and the event loop:</p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop">https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop</a></p>
+                <br/>
+                <p>Video of Philip Robert’s famous presentation ‘What the heck is the event loop anyway?’:</p>
+                <p><a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">https://www.youtube.com/watch?v=8aGhZQkoFbQ</a></p>
+
+                
+            </div>
+        </div>
+     </div>
+
+
+
+
+      <script>function readMoreFunctionOne() {
+        var dotsOne = document.getElementById("dotsOne");
+        var moreTextOne = document.getElementById("moreOne");
+        var btnTextOne = document.getElementById("readMoreButtonOne");
+        
+        if (dotsOne.style.display === "none") {
+          dotsOne.style.display = "inline";
+          btnTextOne.innerHTML = "Read more"; 
+          moreTextOne.style.display = "none";
+        } else {
+          dotsOne.style.display = "none";
+          btnTextOne.innerHTML = "Read less"; 
+          moreTextOne.style.display = "inline";
+        }
+        }
+        function readMoreFunctionTwo() {
+        var dotsTwo = document.getElementById("dotsTwo");
+        var moreTextTwo = document.getElementById("moreTwo");
+        var btnTextTwo = document.getElementById("readMoreButtonTwo");
+        
+        if (dotsTwo.style.display === "none") {
+          dotsTwo.style.display = "inline";
+          btnTextTwo.innerHTML = "Read more"; 
+          moreTextTwo.style.display = "none";
+        } else {
+          dotsTwo.style.display = "none";
+          btnTextTwo.innerHTML = "Read less"; 
+          moreTextTwo.style.display = "inline";
+        }
+        }
+        
+        
+        
+     </script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+  <html>

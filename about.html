@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Stephen Doyle</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/bootstrap3.3.7.css">
+      <link href="css/style.css" type="text/css" rel="stylesheet">
+      <link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>                        
+               </button>
+               <a class="navbar-brand navbarText" href="./index.html">Stephen Doyle</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav justify-content-center">
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./about.html" class="navbarText" >About</a></li>
+                  
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./projects.html" class="navbarText" >Projects</a></li>
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./articles.html" class="navbarText" >Articles</a></li>
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./resources.html" class="navbarText" >Resources</a></li>
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./contact.html" class="navbarText" >Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <div class="container">
+      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12">
+
+
+      <div class="bodyContent" id="about">
+        
+        <h2 class="subheading">About</h2>
+        </br>
+      </br>
+        <p class="quote">'Problems are opportunities in disguise'</p>
+        </br>
+        <p>I think we can all agree 2020 was a terrible year! With quarantines, lockdowns, self-isolations, and all that kind of fun stuff, most of us had a lot of free time on our hands. I decided to make lemonade with 2020's lemons, and use the extra free time to finally really get into the weeds of a hobby that had always captivated me: programming.
+           </br></br>
+           Although my previous work experience has been in recruitment, and in teaching English as a foreign language, I knew there were a lot of successful self-taught programmers out there. Like a lot of people, I was already familiar with <span class="bold">HTML</span> and <span class="bold">CSS</span>, but in 2020 I started to teach myself JavaScript for the first time, and quickly came to appreciate the flexibility and power of the language.
+           </br></br>
+           Once I had spent time learning <span class="bold">JavaScript</span> theory, such as <span class="bold">regular expressions</span>, <span class="bold">methods</span>, <span class="bold">algorithms</span>, <span class="bold">data-structures</span>, and <span class="bold">ES6</span>, I started to put this theory into practice by adding JavaScript to HTML/CSS front-end projects as a way to produce single-page web applications that were responsive to user inputs. Of course, as is the tried and tested and clichéd path, I built a <a href="https://stephendoyle10.github.io/queerculator.github.io/" class="articleLink" target="_blank">calculator</a> first! Next came an interactive javaScript string method <a href="https://stephendoyle10.github.io/jsstringmethods/" class="articleLink" target="_blank">cheat sheet</a>, and then a <a href="https://stephendoyle10.github.io/uksalarycalculator/" class="articleLink" target="_blank">UK Salary Calculator</a>.
+           </br></br>
+           The next challenge was to turn my hand to <span class="bold">full-stack development</span>, and, in particular, to use technologies such as <span class="bold">Node.JS</span>, <span class="bold">Express</span> and <span class="bold">MongoDB</span>. I decided to combine my twin loves of programming and board gaming to build my first full-stack project using these technologies. This was a web app called <a href="https://boarpp.herokuapp.com" class="articleLink" target="_blank">Boarpp</a>: a social media project for baordgamers to share boardgame-related texts, pictures and links, and discuss them with other users.
+        </p>
+        </br>   
+     </div>
+     </div>
+     </div>
+
+
+
+
+      <script>function readMoreFunctionOne() {
+        var dotsOne = document.getElementById("dotsOne");
+        var moreTextOne = document.getElementById("moreOne");
+        var btnTextOne = document.getElementById("readMoreButtonOne");
+        
+        if (dotsOne.style.display === "none") {
+          dotsOne.style.display = "inline";
+          btnTextOne.innerHTML = "Read more"; 
+          moreTextOne.style.display = "none";
+        } else {
+          dotsOne.style.display = "none";
+          btnTextOne.innerHTML = "Read less"; 
+          moreTextOne.style.display = "inline";
+        }
+        }
+        function readMoreFunctionTwo() {
+        var dotsTwo = document.getElementById("dotsTwo");
+        var moreTextTwo = document.getElementById("moreTwo");
+        var btnTextTwo = document.getElementById("readMoreButtonTwo");
+        
+        if (dotsTwo.style.display === "none") {
+          dotsTwo.style.display = "inline";
+          btnTextTwo.innerHTML = "Read more"; 
+          moreTextTwo.style.display = "none";
+        } else {
+          dotsTwo.style.display = "none";
+          btnTextTwo.innerHTML = "Read less"; 
+          moreTextTwo.style.display = "inline";
+        }
+        }
+        
+        
+        
+     </script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+  <html>

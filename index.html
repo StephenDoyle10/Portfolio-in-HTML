@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Personal website</title>
+      <title>Stephen Doyle</title>
       <meta charset="UTF-8">
       <link rel="stylesheet" href="css/bootstrap3.3.7.css">
       <link href="css/style.css" type="text/css" rel="stylesheet">
@@ -18,14 +18,16 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>                        
                </button>
-               <a class="navbar-brand navbarText" href="#">Stephen Doyle</a>
+               <a class="navbar-brand navbarText" href="./index.html">Stephen Doyle</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                <ul class="nav navbar-nav justify-content-center">
-                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#about" class="navbarText" >About</a></li>
-                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#projects" class="navbarText" >Projects</a></li>
-                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#resources" class="navbarText" >Resources</a></li>
-                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#contact" class="navbarText" >Contact</a></li>
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./about.html" class="navbarText" >About</a></li>
+                  
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./projects.html" class="navbarText" >Projects</a></li>
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./articles.html" class="navbarText" >Articles</a></li>
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./resources.html" class="navbarText" >Resources</a></li>
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./contact.html" class="navbarText" >Contact</a></li>
                </ul>
             </div>
          </div>
@@ -39,221 +41,17 @@
             <div class="images">
                <img class="logo" src="images/html-5.svg" alt="HTML5">
                <img class="logo" src="images/css-3.svg" alt="CSS3">
-               <img class="logo" src="images/javascript-4.svg" alt="CSS3">
-               <img class="logo" src="images/bootstrap-4.svg" alt="CSS3">
-               <img class="logo" src="images/sass.svg" alt="CSS3">
-               <img class="logo" src="images/npm.svg" alt="CSS3">
-               <img class="logo" src="images/nodejs.svg" alt="CSS3">
-               <img class="logo" src="images/mongodb.svg" alt="CSS3">
+               <img class="logo" src="images/javascript-4.svg" alt="JavaScript">
+               <img class="logo" src="images/bootstrap-4.svg" alt="Bootstrap">
+               <img class="logo" src="images/sass.svg" alt="Sass">
+               <img class="logo" src="images/npm.svg" alt="NPM">
+               <img class="logo" src="images/nodejs.svg" alt="Node.js">
+               <img class="logo" src="images/mongodb.svg" alt="MongoDB">
             </div>
-            <div id="about">
-               <hr>
-               </br>
-               <h2 class="subheading">About</h2>
-               </br>
-               <p class="quote">'Problems are opportunities in disguise'</p>
-               </br>
-               <p>I think we can all agree 2020 was a terrible year! With quarantines, lockdowns, self-isolations, and all that kind of fun stuff, most of us had a lot of free time on our hands. I decided to make lemonade with 2020's lemons, and use the extra free time to finally really get into the weeds of a hobby that had always captivated me: programming.
-                  </br></br>
-                  Although my previous work experience has been in recruitment, and in teaching English as a foreign language, I knew there were a lot of successful self-taught programmers out there. Like a lot of people, I was already familiar with <span class="bold">HTML</span> and <span class="bold">CSS</span>, but in 2020 I started to teach myself JavaScript for the first time, and quickly came to appreciate the flexibility and power of the language.
-                  </br></br>
-                  Once I had spent time learning <span class="bold">JavaScript</span> theory, such as <span class="bold">regular expressions</span>, <span class="bold">methods</span>, <span class="bold">algorithms</span>, <span class="bold">data-structures</span>, and <span class="bold">ES6</span>, I started to put this theory into practice by adding JavaScript to HTML/CSS front-end projects as a way to produce single-page web applications that were responsive to user inputs. Of course, as is the tried and tested and clichéd path, I built a <a href="https://stephendoyle10.github.io/queerculator.github.io/" class="articleLink" target="_blank">calculator</a> first! Next came an interactive javaScript string method <a href="https://stephendoyle10.github.io/jsstringmethods/" class="articleLink" target="_blank">cheat sheet</a>, and then a <a href="https://stephendoyle10.github.io/uksalarycalculator/" class="articleLink" target="_blank">UK Salary Calculator</a>.
-                  </br></br>
-                  The next challenge was to turn my hand to <span class="bold">full-stack development</span>, and, in particular, to use technologies such as <span class="bold">Node.JS</span>, <span class="bold">Express</span> and <span class="bold">MongoDB</span>. I decided to combine my twin loves of programming and board gaming to build my first full-stack project using these technologies. This was a web app called <a href="https://boarpp.herokuapp.com" class="articleLink" target="_blank">Boarpp</a>: a social media project for baordgamers to share boardgame-related texts, pictures and links, and discuss them with other users.
-               </p>
-               </br>   
-            </div>
-            <div id="projects">
-               <hr>
-               </br>
-               <h2 class="subheading">Projects</h2>
-               <h3 class="subheading">Full-stack:</h3>
-               <div class="project">
-                  <h3 class="subheading">Boarpp</h3>
-                  <br/>
-                  <div class="projectButtons">
-                     <button class="projectButton" onclick="window.open('https://boarpp.herokuapp.com','_blank')">Visit Boarpp</button>
-                     <button class="projectButton" onclick="window.open('https://github.com/StephenDoyle10/boarpp','_blank')">View Code</button>
-                  </div>
-                  </br>
-                  </br>
-                  <div class="projectText">
-                     <p>'Boarpp' is a full-stack web app build with Node.JS, Express and MongoDB. It is a blogging service for the board game community, in which users can create posts about board games they have played<span id="dotsOne">...</span><span id="moreOne"></br>
-                        </br>
-                        This application demonstrates use and proficiency in the following languages, tools, frameworks, runtime environments, database programmes, skills etc:</br>
-                        </br>
-                        HTML</br>
-                        CSS</br>
-                        JavaScript</br>
-                        Modals</br>
-                        Bootstrap</br>
-                        Node</br>
-                        NPM</br>
-                        Express</br>
-                        Template Engine (Embedded JavaScript/EJS)</br>
-                        MongoDB</br>
-                        Mongoose</br>
-                        User registration/ password encryption (using bcrypt)</br>
-                        MVC architecture</br>
-                        Summernote WYSIWYG text editor for formatting posts</br>
-                        </br>
-                        The application includes the following features:</br>
-                        -ability to register an account, and sign in and out</br>
-                        -a feed page which lists all previous posts (sorted by most recent)</br>
-                        -ability to create a new blog post, with option to upload a picture, which then gets added to the feed</br>
-                        -a search function in which a user can search previous posts for a keyword</br></span>
-                     </p>
-                     <a class="articleLink" onclick="readMoreFunctionOne()" id="readMoreButtonOne">Read more</a>
-                  </div>
-               </div>
-               </br>
-               <h3 class="subheading">Front-end:</h3>
-               <div class="project">
-                  <h3 class="subheading">Calculator</h3>
-                  <br/>
-                  <div class="projectButtons">
-                     <button class="projectButton" onclick="window.open('https://stephendoyle10.github.io/queerculator.github.io/','_blank')">Visit Calculator</button>
-                     <button class="projectButton" onclick="window.open('https://github.com/StephenDoyle10/queerculator.github.io','_blank')">View Code</button>
-                  </div>
-                  </br>
-                  </br>
-                  <p>This calculator is my first ever coding project, and I used it as a opportunity to put into pratice some CSS ideas picked up in the Codecademy CSS course, and to try out integrating JavaScript with html.</br></p>
-               </div>
-               <div class="project">
-                  <h3 class="subheading">JavaScript String Method Cheat Sheet</h3>
-                  </br>
-                  <div class="projectButtons">
-                     <button class="projectButton" onclick="window.open('https://stephendoyle10.github.io/jsstringmethods/','_blank')">Visit Cheat Sheet</button>
-                     <button class="projectButton" onclick="window.open('https://github.com/StephenDoyle10/jsstringmethods','_blank')">View Code</button>
-                  </div>
-                  </br>
-                  </br>
-                  <p>This is my first attempt at writing a html webpage that has javaScript functions. I had just completed the javaScript course on freecodecamp, which covered a lot of ground, but did not have much on how to integrate JS with HTML, so I had to research that myself.</br>
-                     </br>
-                     This programme uses html input form fields that takes a users input and stores it as a JS variable. Then an onclick event does something with this variable, and returns a new value on the webpage.
-                     </br>
-                  </p>
-                  </br>
-               </div>
-               <div class="project">
-                  <h3 class="subheading">UK Salary Calculator</h3>
-                  <br/>
-                  <div class="projectButtons">
-                     <button class="projectButton" onclick="window.open('https://stephendoyle10.github.io/uksalarycalculator/','_blank')">Visit UK Salary Calculator</button>
-                     <button class="projectButton" onclick="window.open('https://github.com/StephenDoyle10/uksalarycalculator','_blank')">View Code</button>
-                  </div>
-                  </br>
-                  </br>
-                  <p>This project uses an algorithm that takes a user's annual gross salary as an input, and outputs: <span id="dotsTwo">...</span><span id="moreTwo">1. the user's annual pay after all tax deductions, 2. the user's monthly pay after all tax deductions, 3. how much the user will pay in income tax in the year, 4. how much the user will pay in national insurance contributions in the year.</br>
-                     </br>
-                     I felt that UK tax rules were sufficiently complex enough that this would be a good demonstration of my algorithm writing ability.</br>
-                     </br>
-                     The algorithm had to account for both income tax and national insurance contributions.</br>
-                     </br>
-                     Regarding income tax, the algorithm had to account for the following: 1. employees pay 0% on earnings up to £12,500, 2. employees then pay 20% on anything they earn between £12,501 and £50,000, 3. they pay 40% Income Tax on earnings between £50,001 to £150,000, 4. they pay 45% on earnings over £150,001</br>
-                     </br>
-                     Regarding National Insurance contributions, the algorithm had to account for the following: 1. employees only start to pay National Insurance contributions if they earn more than £183 a week, 2. they pay 12% of their earnings above this limit and up to £962 a week, 3. the rate drops to 2% of their earnings over £962 a week.
-                     </br></span>
-                  </p>
-                  <a class="articleLink" onclick="readMoreFunctionTwo()" id="readMoreButtonTwo">Read more</a>
-               </div>
-               <div class="project">
-                  <h3 class="subheading">Personal Portfolio Website</h3>
-                  </br>
-                  <div class="projectButtons">
-                     <button class="projectButton" onclick="window.open('https://github.com/StephenDoyle10/stephendoyle10.github.io','_blank')">View Code</button>
-                  </div>
-                  </br>
-                  </br>
-                  <p>This is the website you are viewing right now! Built with HTML, CSS and JavaScript, with a little help from my friends Bootstrap and Sass.
-                     </br>
-                  </p>
-                  </br>
-               </div>
-            </div>
-            <div id="resources">
-               <hr>
-               </br>
-               <h2 class="subheading">Resources</h2>
-               </br>
-               <p>Below is a list of some of the resources that helped me in my coding journey, and they all get the Stephen Doyle seal of approval!
-               </p>
-               </br>
-               <h3 class="subheading">Online/ websites:</h3>
-               </br>
-               <p class="mediaName">freeCodeCamp</p>
-               
-               <a class="articleLink" href="https://www.freecodecamp.org" target="_blank">https://www.freecodecamp.org</a>
-               <p>freeCodeCamp is an amazing free online course that I used early on in my coding journey. By the time I discovered freeCodeCamp I was already familiar with HTML and CSS, so I skipped the first module, and went straight to 'JavaScript Algorithms and Data Structures'. This was a revelation, I still return to certain sections as a refresher and to test myself. The following freeCodeCamp modules are not as detailed as its JavaScript one, but are still useful introductions to topics such as Bootstrap, Sass, D3, React and Node.</p>
-               </br>
-               <p class="mediaName">Codecademy</p>
-               
-               <a class="articleLink" href="https://www.codecademy.com" target="_blank">https://www.codecademy.com</a>
-               <p>Codecademy has a huge catalogue of topics and courses, although most of the content is for paid subscribers only. I have only used it for HTML and CSS so far, but can say it was very good for that.</p>
-               </br>
-               <p class="mediaName">Reddit</p>
-               
-               <a class="articleLink" href="https://www.reddit.com" target="_blank">https://www.reddit.com</a>
-               <p>Reddit is a goldmine for programming content, whether it be discussions, advice, news, resources or something else, its all here. There are dozens of programming-related subreddits worth subscribing too, from general ones such as r/learnprogramming, r/webdev and r/compsci, to niche subreddits centred on a specific language or technology, such as r/javascript, r/node or r/reactjs. However, the one indispensible subreddit everyone should subscribe to is r/programminghumor!</p>
-               </br>
-               <p class="mediaName">Stack Overflow</p>
-               
-               <a class="articleLink" href="https://stackoverflow.com" target="_blank">https://stackoverflow.com</a>
-               <p>The most popular programming and computer science help forum out there. If a programmer gets stuck on anything they can ask for help here, and will no doubt have a solution within hours. Although the chances are the question has already been asked and answered, so does not even require a new post.</p>
-               </br>
-               <p class="mediaName">Leetcode</p>               
-               <a class="articleLink" href="https://leetcode.com" target="_blank">https://leetcode.com</a>
-               <p>'Competitive programming' has really taken off in recent years, and there are many websites (with Leetcode being one of the best) that offer coding challenges that programmers use either for fun, or in order to sharpen their algorithm capabilities, often with a view to acing future programming interviews.</p>
-               </br>
-               <p class="mediaName">W3</p>
-               <a class="articleLink" href="https://www.w3schools.com" target="_blank">https://www.w3schools.com</a>
-               <p>Very well-designed, straightforward and comprehensive website that has a page on practically every different aspect of HTML, CSS and JavaScript, as well as an increasing number of other languages and technologies. Each feature of HTML, CSS or JavaScript that is explained has sample code to demonstrate that feature, as well as a virtual browser window to show how that code looks in use.</p>
-               </br>
-               <h3 class="subheading">Podcasts:</h3>
-               </br>
-               <p class="mediaName">CodeNewbie</p>
-               <p>Very accessible and wholesome podcast designed for new programmers (the clue is in the title!). Each episode deals with a single topic and is centred around an interview of a special guest.</p>
-               <p class="mediaName">DevNews</p>
-               <p>Very similar in tone to CodeNewbie (ie wholesome and accessible), and shares the same host. However, DevNews is more centered on current tech news.</p>
-               <p class="mediaName">JavaScript Jabber</p>
-               <p>A little less newbie-centric than CodeNewbie and DevNews, although still quite accessible, this features roundtable discussions with experts on hot issues, and interviews with special guests.</p>
-               </br>
-               <h3 class="subheading">Books:</h3>
-               <h4 class="subheading">JavaScript Algorithms and Data Structures:</h4>
-               <p class="mediaName"><span class="bookTitle">JavaScript Data Structures and Algorithms</span> by Sammy Bae</p>
-               <p class="mediaName"><span class="bookTitle">Learning JavaScript Data Structures and Algorithms</span> by Loiane Groner</p>
-               <p class="mediaName"><span class="bookTitle">Cracking the Coding Interview: 189 Programming Questions and Solutions</span> by Gayle Laakmann McDowell</p>
-               </br>
-               <h4 class="subheading">Bootstrap:</h4>
-               <p class="mediaName"><span class="bookTitle">Bootstrap 4 - Responsive Web Design</span> by Silvio Moreto</p>
-               </br>
-               <h4 class="subheading">Node.js:</h4>
-               <p class="mediaName"><span class="bookTitle">Beginning Node.js, Express and MongoDB Development</span> by Greg Lim</p>
-               <p>This is book is less than 150 pages but somehow still manages to walk you through the creation of full stack node.js project from beginning to deployment on heroku. Very concise, well explained and easy to follow.</p>
-               <p class="mediaName"><span class="bookTitle">Get Programming with Node.js</span> by Jonathan Wexler</p>
-               <p>Huge (500 pages+), wonderfully designed, and comprehensive book on building a Node.js project, from complete beginning, up to deploying on heroku and testing with mocha and chai.</p>
-               </br>
-               <h4 class="subheading">Node.js/ React:</h4>
-               <p class="mediaName"><span class="bookTitle">Modern Full-Stack Development Using TypeScript, React, Node.js, Webpack and Docker</span> by Frank Zammetti</p>
-               <p>A great technical manual on all the technologies it covers, but what makes it stand out is how witty and charming a writer Frank Zammetti is. In between the technical instruction he fills the book with entertaining and illuminating industry-insider anecdotes on the history of web development to explain why and how technologies like React, TypeScript, Webpack and Docker came about.</p>
-               </br>
-               <h4 class="subheading">Biography/ general:</h4>
-               <p class="mediaName"><span class="bookTitle">Code: The Hidden Language of Computer Hardware and Software</span> by Charles Petzold</p>
-               <p>Author Charles Petzold has an amazing ability to make difficult concepts easy to understand. This book covers the history of computer science and shows how things like braile, morse code, telegraphs and relays helped pave the way for the modern computer.  </p>
-               <p class="mediaName"><span class="bookTitle">The Innovators</span> by Walter Isaacson</p>
-               <p>Extremely entertaining and unputdownable book focusing on all the eccentric genius' that propelled computer science forward, from Charles Babbage and Ada, Countess of Lovelace in the early 19th century, to the usual suspects of Bill Gates and Steve Jobs in the late 20th century. Featuring thrilling accounts of all the biggest discoveries and breakthroughs in computer science such as the invention of the transistor, the microchip, video games, the home computer etc. It covers much of the same ground as another book in this list - Code by Charles Petzold - but the Innovators is much more gossipy and less technical.</p>
-               </br>
-               <p></p>
-               </br>  
-            </div>
-            <div id="contact">
-               <hr>
-               </br>
-               <h2 class="subheading">Contact</h2>
-               <p>I can be emailed at stephen.doyle10@yahoo.co.uk</p>
-               </br>
-               <p><a class="articleLink" href="https://github.com/StephenDoyle10" target="_blank"> Github profile</a></p>
-            </div>
+            
+            
+            
+            
             </br></br></br></br></br></br></br></br></br></br></br></br>
          </div>
       </div>

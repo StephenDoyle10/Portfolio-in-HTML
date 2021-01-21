@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Personal website</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/bootstrap3.3.7.css">
+      <link href="css/style.css" type="text/css" rel="stylesheet">
+      <link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>                        
+               </button>
+               <a class="navbar-brand navbarText" href="./index.html">Stephen Doyle</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav justify-content-center">
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./about.html" class="navbarText" >About</a></li>
+                  
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./projects.html" class="navbarText" >Projects</a></li>
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./articles.html" class="navbarText" >Articles</a></li>
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./resources.html" class="navbarText" >Resources</a></li>
+                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="./contact.html" class="navbarText" >Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <div class="container">
+      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12">
+        <div class="bodyContent" id="projects">
+            
+            <h2 class="subheading">Projects</h2>
+            <br/>
+            <h3 class="subheading">Full-stack:</h3>
+            <div class="project">
+               <h3 class="subheading">Boarpp</h3>
+               <br/>
+               <div class="projectButtons">
+                  <button class="projectButton" onclick="window.open('https://boarpp.herokuapp.com','_blank')">Visit Boarpp</button>
+                  <button class="projectButton" onclick="window.open('https://github.com/StephenDoyle10/boarpp','_blank')">View Code</button>
+               </div>
+               </br>
+               </br>
+               <div class="projectText">
+                  <p>'Boarpp' is a full-stack web app build with Node.JS, Express and MongoDB. It is a blogging service for the board game community, in which users can create posts about board games they have played<span id="dotsOne">...</span><span id="moreOne"></br>
+                     </br>
+                     This application demonstrates use and proficiency in the following languages, tools, frameworks, runtime environments, database programmes, skills etc:</br>
+                     </br>
+                     HTML</br>
+                     CSS</br>
+                     JavaScript</br>
+                     Modals</br>
+                     Bootstrap</br>
+                     Node</br>
+                     NPM</br>
+                     Express</br>
+                     Template Engine (Embedded JavaScript/EJS)</br>
+                     MongoDB</br>
+                     Mongoose</br>
+                     User registration/ password encryption (using bcrypt)</br>
+                     MVC architecture</br>
+                     Summernote WYSIWYG text editor for formatting posts</br>
+                     </br>
+                     The application includes the following features:</br>
+                     -ability to register an account, and sign in and out</br>
+                     -a feed page which lists all previous posts (sorted by most recent)</br>
+                     -ability to create a new blog post, with option to upload a picture, which then gets added to the feed</br>
+                     -a search function in which a user can search previous posts for a keyword</br></span>
+                  </p>
+                  <a class="articleLink" onclick="readMoreFunctionOne()" id="readMoreButtonOne">Read more</a>
+               </div>
+            </div>
+            </br>
+            <h3 class="subheading">Front-end:</h3>
+            <div class="project">
+               <h3 class="subheading">Calculator</h3>
+               <br/>
+               <div class="projectButtons">
+                  <button class="projectButton" onclick="window.open('https://stephendoyle10.github.io/queerculator.github.io/','_blank')">Visit Calculator</button>
+                  <button class="projectButton" onclick="window.open('https://github.com/StephenDoyle10/queerculator.github.io','_blank')">View Code</button>
+               </div>
+               </br>
+               </br>
+               <p>This calculator is my first ever coding project, and I used it as a opportunity to put into pratice some CSS ideas picked up in the Codecademy CSS course, and to try out integrating JavaScript with html.</br></p>
+            </div>
+            <div class="project">
+               <h3 class="subheading">JavaScript String Method Cheat Sheet</h3>
+               </br>
+               <div class="projectButtons">
+                  <button class="projectButton" onclick="window.open('https://stephendoyle10.github.io/jsstringmethods/','_blank')">Visit Cheat Sheet</button>
+                  <button class="projectButton" onclick="window.open('https://github.com/StephenDoyle10/jsstringmethods','_blank')">View Code</button>
+               </div>
+               </br>
+               </br>
+               <p>This is my first attempt at writing a html webpage that has javaScript functions. I had just completed the javaScript course on freecodecamp, which covered a lot of ground, but did not have much on how to integrate JS with HTML, so I had to research that myself.</br>
+                  </br>
+                  This programme uses html input form fields that takes a users input and stores it as a JS variable. Then an onclick event does something with this variable, and returns a new value on the webpage.
+                  </br>
+               </p>
+               </br>
+            </div>
+            <div class="project">
+               <h3 class="subheading">UK Salary Calculator</h3>
+               <br/>
+               <div class="projectButtons">
+                  <button class="projectButton" onclick="window.open('https://stephendoyle10.github.io/uksalarycalculator/','_blank')">Visit UK Salary Calculator</button>
+                  <button class="projectButton" onclick="window.open('https://github.com/StephenDoyle10/uksalarycalculator','_blank')">View Code</button>
+               </div>
+               </br>
+               </br>
+               <p>This project uses an algorithm that takes a user's annual gross salary as an input, and outputs: <span id="dotsTwo">...</span><span id="moreTwo">1. the user's annual pay after all tax deductions, 2. the user's monthly pay after all tax deductions, 3. how much the user will pay in income tax in the year, 4. how much the user will pay in national insurance contributions in the year.</br>
+                  </br>
+                  I felt that UK tax rules were sufficiently complex enough that this would be a good demonstration of my algorithm writing ability.</br>
+                  </br>
+                  The algorithm had to account for both income tax and national insurance contributions.</br>
+                  </br>
+                  Regarding income tax, the algorithm had to account for the following: 1. employees pay 0% on earnings up to £12,500, 2. employees then pay 20% on anything they earn between £12,501 and £50,000, 3. they pay 40% Income Tax on earnings between £50,001 to £150,000, 4. they pay 45% on earnings over £150,001</br>
+                  </br>
+                  Regarding National Insurance contributions, the algorithm had to account for the following: 1. employees only start to pay National Insurance contributions if they earn more than £183 a week, 2. they pay 12% of their earnings above this limit and up to £962 a week, 3. the rate drops to 2% of their earnings over £962 a week.
+                  </br></span>
+               </p>
+               <a class="articleLink" onclick="readMoreFunctionTwo()" id="readMoreButtonTwo">Read more</a>
+            </div>
+            <div class="project">
+               <h3 class="subheading">Personal Portfolio Website</h3>
+               </br>
+               <div class="projectButtons">
+                  <button class="projectButton" onclick="window.open('https://github.com/StephenDoyle10/stephendoyle10.github.io','_blank')">View Code</button>
+               </div>
+               </br>
+               </br>
+               <p>This is the website you are viewing right now! Created from scratch, and built with HTML, CSS and JavaScript, with a little help from my friends Bootstrap and Sass.
+                  </br>
+               </p>
+               </br>
+            </div>
+         </div>
+
+      
+     </div>
+     </div>
+
+
+
+
+      <script>function readMoreFunctionOne() {
+        var dotsOne = document.getElementById("dotsOne");
+        var moreTextOne = document.getElementById("moreOne");
+        var btnTextOne = document.getElementById("readMoreButtonOne");
+        
+        if (dotsOne.style.display === "none") {
+          dotsOne.style.display = "inline";
+          btnTextOne.innerHTML = "Read more"; 
+          moreTextOne.style.display = "none";
+        } else {
+          dotsOne.style.display = "none";
+          btnTextOne.innerHTML = "Read less"; 
+          moreTextOne.style.display = "inline";
+        }
+        }
+        function readMoreFunctionTwo() {
+        var dotsTwo = document.getElementById("dotsTwo");
+        var moreTextTwo = document.getElementById("moreTwo");
+        var btnTextTwo = document.getElementById("readMoreButtonTwo");
+        
+        if (dotsTwo.style.display === "none") {
+          dotsTwo.style.display = "inline";
+          btnTextTwo.innerHTML = "Read more"; 
+          moreTextTwo.style.display = "none";
+        } else {
+          dotsTwo.style.display = "none";
+          btnTextTwo.innerHTML = "Read less"; 
+          moreTextTwo.style.display = "inline";
+        }
+        }
+        
+        
+        
+     </script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+  <html>
