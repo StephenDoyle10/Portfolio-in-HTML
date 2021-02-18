@@ -1,7 +1,7 @@
 # stephendoyle10.github.io
 This is my original portfolio website, that was built when I only knew HTML and CSS. Later I refactored it so it was made in React. 
 
-Original portfolio website in html: https://stephendoyle10.github.io/portfolio_in_html/
+Original portfolio website in html: https://stephendoyle10.github.io/Portfolio-in-HTML/
 
 Refactored portfolio website using react: https://stephendoyle10.github.io
 
